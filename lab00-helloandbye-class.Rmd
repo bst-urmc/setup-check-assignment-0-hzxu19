@@ -1,7 +1,7 @@
 ---
 title: "Lab 00 - Hello Class!"
-date: "2016-09-07 (updated `r Sys.Date()` by TL)"
-author: "Tanzy Love"
+date: "2016-09-07 (updated `r Sys.Date()` by Hz)"
+author: "Hongzhe Xu"
 output: 
   tufte::tufte_html:
     tufte_variant: "envisioned"
@@ -14,7 +14,7 @@ output:
 ---
 
 ```{r include=FALSE}
-library(tidyverse)
+library(tidyverse)   #tufte
 library(datasauRus)
 options(
   htmltools.dir.version = FALSE, # for blogdown
@@ -85,11 +85,8 @@ Read in some data.
 ```{r hotdogs}
 hotdogs=read.table("Hdcalsod.TXT", header=T)
 
-colnames(hotdogs)
-hotdogs$Calories
-
-attach(hotdogs)
-
+attach(hotdogs)  #if you do this, you don't need to input long name hotdogs$Sodium, just like Sodium
+ 
 plot(Calories, Sodium, xlab="Calories", ylab="Sodium", pch=16)
 cor(Calories, Sodium)
 
