@@ -150,7 +150,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <h1 class="title toc-ignore">Lab 00 - Hello Class!</h1>
 <h4 class="author">Hongzhe Xu</h4>
-<h4 class="date">2016-09-07 (updated 2022-09-09 by Hz)</h4>
+<h4 class="date">2016-09-07 (updated 2022-09-13 by Hz)</h4>
 
 
 
@@ -323,6 +323,31 @@ make sure all documents are updated on your GitHub repo.</em></p>
 <h2>Rubric (0 points possible)</h2>
 <p>You may not be able to do this on your own after lecture 0, so don’t
 worry about it!!</p>
+<p>##lab report 9.13 ##It has 1846 rows,3 columns and 3 variables</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) </span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(datasauRus)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>datasaurus_dozen<span class="sc">%&gt;%</span><span class="fu">count</span>(dataset)<span class="sc">%&gt;%</span><span class="fu">print</span>(<span class="dv">13</span>)</span></code></pre></div>
+<pre><code>## # A tibble:
+## #   13 × 2
+##    dataset   
+##    &lt;chr&gt;     
+##  1 away      
+##  2 bullseye  
+##  3 circle    
+##  4 dino      
+##  5 dots      
+##  6 h_lines   
+##  7 high_lines
+##  8 slant_down
+##  9 slant_up  
+## 10 star      
+## 11 v_lines   
+## 12 wide_lines
+## 13 x_shape   
+## # … with 1
+## #   more
+## #   variable:
+## #   n &lt;int&gt;</code></pre>
 </div>
 </div>
 

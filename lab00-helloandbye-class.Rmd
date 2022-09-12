@@ -154,3 +154,11 @@ In order to push your changes to GitHub, click on **Push**. This will prompt a d
 ## Rubric (0 points possible)
 
 You may not be able to do this on your own after lecture 0, so don't worry about it!!
+
+##lab report 9.13
+##It has 1846 rows,3 columns and 3 variables
+```{r datasauRus}
+library(tidyverse) 
+library(datasauRus)
+datasaurus_dozen%>%count(dataset)%>%print(13)
+```
